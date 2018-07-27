@@ -1,11 +1,14 @@
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:400,600,700);
+
 body {
     background-color: black;
     width: 95%;
     margin: auto;
+    font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
 .header {
-    background: url('素材/starfield-banner.jpg ');
+    background: url('images/starfield-banner.jpg ');
     position: fixed;
     width: 95%;
 }
@@ -15,6 +18,127 @@ body {
 }
 
 .header .logo {
-    width:110px;
-    margin:11px;
+    width: 110px;
+    margin: 11px;
+}
+
+.header .logo-wrapper {
+    float: left;
+}
+
+.menu-search {
+    margin: 12px 0;
+}
+
+ul.main-menu {
+    font-size: 0;
+    float: right;
+    margin-right: 1em;
+}
+
+ul.main-menu li {
+    display: inline-block;
+    position: relative;
+    color: white;
+    font-size: 20px;
+    font-weight: lighter;
+    padding: 30px 14px;
+}
+
+ul.main-menu li::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 20%;
+    background: #555555;
+    width: 2px;
+    height: 60%;
+    left: -1px;
+}
+
+ul.main-menu li:nth-child(1)::before {
+    display:none;
+}
+
+.header .search-box {
+    float: right;
+    margin: 1.7em 2em 0 0;
+}
+
+.sub-menu a:link,.sub-menu a:visited,.sub-menu a:active,.sub-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
+.sub-menu li {
+    display: inline-block;
+    position: relative;
+}
+
+ul.sub-menu {
+    list-style: none;
+    font-size: 0;
+    clear: both;
+    padding: 0;
+    text-align: center;
+}
+
+.sub-menu li::before {
+    content: "";
+    position: absolute;
+    left: -1px;
+    z-index: 1;
+    top: 20%;
+    display: block;
+    width: 1px;
+    height: 100%;
+    background-color: #888;
+}
+.sub-menu li:nth-child(1)::before {
+    display: none;
+}
+
+.sub-menu li a {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #555;
+    font-weight: normal;
+}
+
+.search {
+    height: 40px;
+    width: 156px;
+    position: relative;
+}
+
+.search input[type=search] {
+    width: 156px;
+    background-color: #333333;
+    padding: 10px 36px 10px 10px;
+    box-sizing: border-box;
+    position: relative;
+    border: none;
+    font-size: 14px;
+    color: white;
+}
+
+.search input[type=submit] {
+    background: url("images/search.svg") no-repeat;
+    border:none;
+    width: 3em;
+    height: 3em;
+    position: absolute;
+    top:5px;
+    right: 10px;
+}
+
+.nav-search {
+    float: left;
+}
+.nav-social {
+    float: left;
+    padding: 5px;
+}
+.share {
+    width: 30px;
 }
