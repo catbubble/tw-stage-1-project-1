@@ -26,10 +26,6 @@ body {
     float: left;
 }
 
-.menu-search {
-    margin: 12px 0;
-}
-
 ul.main-menu {
     font-size: 0;
     float: right;
@@ -73,12 +69,14 @@ ul.main-menu li:nth-child(1)::before {
 .sub-menu li {
     display: inline-block;
     position: relative;
+    font-size: 14px;
+    margin-left: -4px; ;
 }
 
 ul.sub-menu {
     list-style: none;
-    font-size: 0;
-    clear: both;
+    /*font-size: 0;*/
+    /*clear: both;*/
     padding: 0;
     text-align: center;
 }
@@ -100,7 +98,6 @@ ul.sub-menu {
 
 .sub-menu li a {
     padding: 10px 15px;
-    font-size: 14px;
     background-color: #555;
     font-weight: normal;
 }
@@ -141,4 +138,35 @@ ul.sub-menu {
 }
 .share {
     width: 30px;
+}
+
+.clearfix:after {
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
+}
+
+
+/*.image-line1 {*/
+    /*padding: 20px;*/
+    /*margin: 40px;*/
+/*}*/
+.image1-left {
+    float: left;
+    width: 50%;
+}
+
+.image1-right {
+    float: left;
+    width: 50%;
+}
+
+.earth {
+    float: left;
+}
+.nasa-events {
+    float: left;
+    color: white;
 }
