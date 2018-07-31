@@ -125,8 +125,8 @@ ul.sub-menu {
     width: 3em;
     height: 3em;
     position: absolute;
-    top:5px;
-    right: 10px;
+    top:3px;
+    right: 6px;
 }
 
 .nav-search {
@@ -149,24 +149,30 @@ ul.sub-menu {
 }
 
 
-/*.image-line1 {*/
-    /*padding: 20px;*/
-    /*margin: 40px;*/
-/*}*/
+.image-line1 {
+    padding-top: 180px;
+    overflow: hidden;
+}
 .image1-left {
     float: left;
-    width: 50%;
+    width: 48%;
 }
 
 .image1-right {
     float: left;
-    width: 50%;
+    width: 48%;
 }
 
 .earth {
     float: left;
 }
 .nasa-events {
+    display: block;
+    box-sizing: border-box;
     float: left;
     color: white;
+    height: 100%;
+    width: 45%;
+    margin-left: 10px;
 }
+
