@@ -7,10 +7,16 @@ body {
     font-family: "Titillium Web", "Helvetica Neue", "Helvetica", Arial, sans-serif;
 }
 
+a:link,.sub-menu a:visited,.sub-menu a:active,.sub-menu a:hover {
+    text-decoration: none;
+    color: white;
+}
+
 .header {
     background: url('images/starfield-banner.jpg ');
     position: fixed;
     width: 95%;
+    z-index: 1000;
 }
 
 .header .logo-link {
@@ -151,11 +157,15 @@ ul.sub-menu {
 
 .image-line1 {
     padding-top: 180px;
-    overflow: hidden;
+    color: white;
 }
 .image1-left {
     float: left;
     width: 48%;
+    height: 640px;
+    background: url('images/pia21924-16.jpg');
+    margin-right: 15px;
+    position: relative;
 }
 
 .image1-right {
@@ -165,14 +175,76 @@ ul.sub-menu {
 
 .earth {
     float: left;
+    background: url('images/mollweide_cycle.jpg');
+    width: 45%;
+    height: 320px;
+    position: relative;
+    background-repeat: no-repeat;
 }
+
+.state {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.tag a {
+    background: rgba(93, 127, 185, 0.8);
+    padding: 6px 12px;
+}
+.headline {
+    background-color:rgba(255, 255, 255, 0.8);
+    color: #333333;
+    padding: 5px 10px;
+    margin-top: 6px;
+}
+
 .nasa-events {
     display: block;
     box-sizing: border-box;
     float: left;
     color: white;
-    height: 100%;
-    width: 45%;
-    margin-left: 10px;
+    height: 320px;
+    width: 52%;
+    margin-left: 15px;
+    background-color:rgb(57, 113, 158);
+}
+
+.nasa-events h4 {
+    margin: 0 8px 3px 8px;
+    padding: 8px 0 6px 0;
+    border-bottom: solid white;
+}
+
+.image1-right-bot {
+    background: url('images/s69-39961.jpg');
+    background-repeat: no-repeat;
+    height: 310px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.image-line2 {
+    height: 320px;
+    margin-top: 10px;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.line2-left {
+    background: url('images/ssc2017-14a1.jpg');
+    width: 25%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.line2-middle {
+    background: url('images/pia22556-16.gif');
+    width: 55%;
+    position: relative;
+}
+
+.line2-right {
+
 }
 
