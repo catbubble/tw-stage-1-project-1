@@ -175,11 +175,10 @@ ul.sub-menu {
 
 .earth {
     float: left;
-    background: url('images/mollweide_cycle.jpg');
     width: 45%;
     height: 320px;
     position: relative;
-    background-repeat: no-repeat;
+    background: url('images/mollweide_cycle.jpg') no-repeat;
 }
 
 .state {
@@ -197,6 +196,7 @@ ul.sub-menu {
     color: #333333;
     padding: 5px 10px;
     margin-top: 6px;
+    font-weight: bold;
 }
 
 .nasa-events {
@@ -208,6 +208,8 @@ ul.sub-menu {
     width: 52%;
     margin-left: 15px;
     background-color:rgb(57, 113, 158);
+    position: relative;
+    font-weight: lighter;
 }
 
 .nasa-events h4 {
@@ -216,12 +218,24 @@ ul.sub-menu {
     border-bottom: solid white;
 }
 
+.nasa-events h5 {
+    width: 92%;
+    margin: 0 8px 3px 8px;
+    padding: 8px 0 6px 0;
+    border-top: solid white;
+    position: absolute;
+    bottom: 0;
+}
+
+.text {
+    padding: 6px 6px;
+}
 .image1-right-bot {
-    background: url('images/s69-39961.jpg');
-    background-repeat: no-repeat;
+    background: url('images/s69-39961.jpg') no-repeat;
     height: 310px;
     position: relative;
     margin-top: 15px;
+    background-size: cover;
 }
 
 .image-line2 {
@@ -240,11 +254,92 @@ ul.sub-menu {
 
 .line2-middle {
     background: url('images/pia22556-16.gif');
-    width: 55%;
+    width: 46%;
     position: relative;
 }
 
 .line2-right {
+    width: 20%;
+    margin-left: 15px;
+}
+
+
+.image-line3 {
+    height: 320px;
+    margin-top: 10px;
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.line3-left {
+    background: url('images/nasa-logo.svg');
+    width: 24%;
+    position: relative;
+    margin-right: 15px;
+    background-size: cover;
+}
+
+.line3-middle1 {
+    background: url('images/io-home.gif');
+    width: 23%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.line3-middle2 {
+    background: url('images/cassini20170809.jpg');
+    width: 23%;
+    position: relative;
+    margin-right: 15px;
+}
+
+.line3-right {
+    background: url('images/fermiicecube_as.jpg');
+    width: 24%;
+    position: relative;
+    background-size: cover;
+}
+
+.line4 {
+    text-align: center;
+    background-color: #15418c;
+    color: white;
+    margin-top: 30px;
+    font-size: 17px;
+    font-weight: 600;
+    padding-top: 10px;
+    margin-left: 0px;
+    margin-right: 20px;
+    height: 35px;
 
 }
 
+.bottom {
+    display: flex;
+    flex-flow: row wrap;
+    height: 180px;
+    padding: 1.25em .7em 3em;
+    overflow: hidden;
+    color: white;
+    position: relative;
+}
+
+.bottom-middle p {
+    margin: 0px 0px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.bottom-right li {
+    display: inline-block;
+    color: #5d7fb9;
+    padding: 0 15px;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.bottom-right ul {
+    position: absolute;
+    bottom: 80px;
+    right: 0;
+}
